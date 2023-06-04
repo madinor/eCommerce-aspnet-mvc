@@ -1,4 +1,4 @@
-﻿namespace eCommerce.Data
+﻿namespace eCommerce.Data.Enums
 {
     public class MovieCategory
     {
