@@ -20,31 +20,31 @@ namespace eCommerce.Data
                         new Cinema()
                         {
                             Name = "Cinema 1",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-1.jpeg",
+                            Logo = "https://thumbs2.imgbox.com/1a/2b/dk1ZUif4_t.jpeg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 2",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-2.jpeg",
+                            Logo = "https://thumbs2.imgbox.com/6f/02/HmhtyN38_t.jpeg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 3",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-3.jpeg",
+                            Logo = "https://thumbs2.imgbox.com/08/ff/9qIl5U9F_t.jpeg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 4",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-4.jpeg",
+                            Logo = "https://thumbs2.imgbox.com/4c/54/5SAnhujA_t.jpeg",
                             Description = "This is the description of the first cinema"
                         },
                         new Cinema()
                         {
                             Name = "Cinema 5",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-5.jpeg",
+                            Logo = "https://thumbs2.imgbox.com/cf/18/1ompSYZW_t.jpeg",
                             Description = "This is the description of the first cinema"
                         },
                     });
@@ -57,34 +57,34 @@ namespace eCommerce.Data
                     {
                         new Actor()
                         {
-                            FullName = "Actor 1",
+                            FullName = "GeorgeClooney",
                             Bio = "This is the Bio of the first actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg"
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/9d/a5/GBlfkPPU_t.jpg"
 
                         },
                         new Actor()
                         {
-                            FullName = "Actor 2",
+                            FullName = "JohnnyDepp",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-2.jpeg"
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/5c/6e/pGgezSlE_t.jpg"
                         },
                         new Actor()
                         {
-                            FullName = "Actor 3",
+                            FullName = "Margot_Robbie",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-3.jpeg"
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/57/52/Hkpn6bUk_t.jpg"
                         },
                         new Actor()
                         {
-                            FullName = "Actor 4",
+                            FullName = "RyanReynolds",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-4.jpeg"
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/e0/0c/v5q3kwnd_t.jpg"
                         },
                         new Actor()
                         {
-                            FullName = "Actor 5",
+                            FullName = "Tom Cruise",
                             Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/da/af/kqYcAbP2_t.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -96,34 +96,34 @@ namespace eCommerce.Data
                     {
                         new Producer()
                         {
-                            FullName = "Producer 1",
-                            Bio = "This is the Bio of the first actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-1.jpeg"
+                            FullName = "Kevin Feige",
+                            Bio = "This is the Bio of the first Producer",
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/03/65/Ac3Td9ZH_t.jpg"
 
                         },
                         new Producer()
                         {
                             FullName = "Producer 2",
-                            Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-2.jpeg"
+                            Bio = "This is the Bio of the second Produucer",
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/af/ce/7eHxvDAy_t.jpg"
                         },
                         new Producer()
                         {
-                            FullName = "Producer 3",
-                            Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-3.jpeg"
+                            FullName = "Spike Lee",
+                            Bio = "This is the Bio of the third Producer",
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/b0/b8/QFhMzeQw_t.jpg"
                         },
                         new Producer()
                         {
-                            FullName = "Producer 4",
-                            Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-4.jpeg"
+                            FullName = "Kathleen Kennedy",
+                            Bio = "This is the Bio of the forth Producer",
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/28/39/TGJ6s711_t.jpg"
                         },
                         new Producer()
                         {
-                            FullName = "Producer 5",
-                            Bio = "This is the Bio of the second actor",
-                            ProfilePictureURL = "http://dotnethow.net/images/producers/producer-5.jpeg"
+                            FullName = "Michael Bay",
+                            Bio = "This is the Bio of the fifth pro",
+                            ProfilePictureURL = "https://thumbs2.imgbox.com/6b/d4/PuuFmYFV_t.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -135,10 +135,10 @@ namespace eCommerce.Data
                     {
                         new Movie()
                         {
-                            Name = "Life",
-                            Description = "This is the Life movie description",
+                            Name = "GRAN TURISMO",
+                            Description = "GRAN TURISMO movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
+                            ImageURL = "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/MasterRepository/fandango/231714/GranTurismo2023.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(10),
                             CinemaId = 3,
@@ -147,10 +147,10 @@ namespace eCommerce.Data
                         },
                         new Movie()
                         {
-                            Name = "The Shawshank Redemption",
-                            Description = "This is the Shawshank Redemption description",
+                            Name = "BREAK THE SILENCE",
+                            Description = "BREAK THE SILENCE description",
                             Price = 29.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
+                            ImageURL = "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/MasterRepository/fandango/223389/BREAK%20THE%20SILENCE_ONE%20SHEET%20ARTWORK_US.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(3),
                             CinemaId = 1,
@@ -159,10 +159,10 @@ namespace eCommerce.Data
                         },
                         new Movie()
                         {
-                            Name = "Ghost",
-                            Description = "This is the Ghost movie description",
+                            Name = "IMPRACTICAL JOKERS",
+                            Description = "IMPRACTICAL JOKERS movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
+                            ImageURL = "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/MasterRepository/fandango/222272/impracticaljokers-Jmovie-300x450.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(7),
                             CinemaId = 4,
@@ -171,10 +171,10 @@ namespace eCommerce.Data
                         },
                         new Movie()
                         {
-                            Name = "Race",
-                            Description = "This is the Race movie description",
+                            Name = "THE ANGRY BIRDS",
+                            Description = "THE ANGRY BIRDS movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-6.jpeg",
+                            ImageURL = "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/MasterRepository/fandango/217420/AB2_1SHT_FRNMS_FNL_06.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-5),
                             CinemaId = 1,
@@ -183,10 +183,10 @@ namespace eCommerce.Data
                         },
                         new Movie()
                         {
-                            Name = "Scoob",
-                            Description = "This is the Scoob movie description",
+                            Name = "THE SHACK",
+                            Description = "THE SHACK movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-7.jpeg",
+                            ImageURL = "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/MasterRepository/fandango/198124/FIN09_TheShack_1Sht_Payoff_.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-2),
                             CinemaId = 1,
@@ -195,10 +195,10 @@ namespace eCommerce.Data
                         },
                         new Movie()
                         {
-                            Name = "Cold Soles",
-                            Description = "This is the Cold Soles movie description",
+                            Name = "PALAU",
+                            Description = "PALAU movie description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-8.jpeg",
+                            ImageURL = "https://images.fandango.com/ImageRenderer/200/0/redesign/static/img/default_poster.png/0/images/MasterRepository/fandango/216749/Palau%20-%20One%20Sheet.jpg",
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             CinemaId = 1,
