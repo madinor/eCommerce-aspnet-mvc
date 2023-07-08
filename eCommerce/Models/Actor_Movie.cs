@@ -1,4 +1,6 @@
-﻿namespace eCommerce.Models
+﻿using eCommerce.Models;
+
+namespace eCommerce.Models
 {
     public class Actor_Movie
     {

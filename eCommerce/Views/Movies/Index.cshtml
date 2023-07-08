@@ -11,11 +11,11 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-12">
-                        <div class="card-header text-white bg-success">
+                        <div class="card-header text-white bg-info">
                             <p class="card-text">
                                 <h5 class="card-title">
                                     @item.Name
-                                    <a class="text-white float-right"><i class="bi bi-pencil-square"></i></a>
+                                    <a class="text-white float-end" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil-square"></i></a>
                                 </h5>
                             </p>
                         </div>
@@ -34,7 +34,7 @@
                                 <b>Status: </b>
                                 @if (DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
                                 {
-                                    <span class="badge bg-primary text-white">AVAILABLE</span>
+                                    <span class="badge bg-success text-white">AVAILABLE</span>
                                 }
                                 else if (DateTime.Now > item.EndDate)
                                 {
@@ -51,7 +51,9 @@
                     <div class="col-md-12">
                         <div class="card-footer ">
                             <p class="card-text">
-                                <a class="btn btn-outline-success float-right"><i class="bi bi-eye-fill"></i> Show Details</a>
+                                <a class="btn btn-outline-primary float-end" asp-action="Details" asp-route-id="@item.Id">
+                                    <i class="bi bi-eye-fill"></i> Show Details
+                                </a>
                                 <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Add to Cart (Price @item.Price.ToString("c"))</a>
                             </p>
                         </div>
@@ -61,3 +63,5 @@
         </div>
     }
 </div>
+
+@await Html.PartialAsync("_CreateItem", "Movies") 

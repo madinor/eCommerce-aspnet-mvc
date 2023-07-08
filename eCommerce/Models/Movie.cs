@@ -1,10 +1,11 @@
-﻿using eCommerce.Data.Enums;
+﻿using eCommerce.Data.Base;
+using eCommerce.Data.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eCommerce.Models
 {
-    public class Movie
+    public class Movie: IEntityBase
     {
         [Key]
         public int Id { get; set; }
@@ -27,6 +28,6 @@ namespace eCommerce.Models
         public Producer Producer { get; set; }
 
         //RelationShip with Actor_Movie
-        public List<Actor_Movie> Actors_Movies { get; set; }
+        public List<Actor_Movie>? Actors_Movies { get; set; }
     }
 }
