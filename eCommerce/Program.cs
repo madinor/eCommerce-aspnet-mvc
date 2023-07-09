@@ -1,5 +1,8 @@
+using eCommerce.Controllers;
 using eCommerce.Data;
+using eCommerce.Data.Cart;
 using eCommerce.Data.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 internal class Program
@@ -15,10 +18,17 @@ internal class Program
         builder.Services.AddScoped<IActorsService, ActorsService>();
         builder.Services.AddScoped<IProducersService, ProducersService>();
         builder.Services.AddScoped<ICinemasService, CinemasService>();
-        builder.Services.AddScoped<IMoviesService, MoviesService>(); 
-        builder.Services.AddControllersWithViews();
-        builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        builder.Services.AddScoped<IMoviesService, MoviesService>();
+        builder.Services.AddScoped<IOrdersService, OrdersService>();
+        builder.Services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
+        //Authentication and authorization
+        //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+        //builder.Services.AddMemoryCache();
 
+        
+        builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        builder.Services.AddSession();
+        builder.Services.AddControllersWithViews();
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -37,6 +47,7 @@ internal class Program
         app.UseStaticFiles();
 
         app.UseRouting();
+        app.UseSession();
 
         app.UseAuthorization();
 
