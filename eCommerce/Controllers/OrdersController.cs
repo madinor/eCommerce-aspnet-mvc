@@ -1,11 +1,13 @@
 ﻿using eCommerce.Data.Cart;
 using eCommerce.Data.Services;
 using eCommerce.Data.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
 namespace eCommerce.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly IMoviesService _moviesService;

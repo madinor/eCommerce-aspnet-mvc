@@ -1,21 +1,27 @@
 ﻿using eCommerce.Data.Services;
 using eCommerce.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerce.Controllers
 {
+    [Authorize]
     public class CinemasController : Controller
     {
         private readonly ICinemasService _service;
+
         public CinemasController(ICinemasService service)
         {
             _service = service;
         }
+
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var allCinemas = await _service.GetAllAsync();
             return View(allCinemas);
         }
+
 
         //Get: Cinemas/Create
         public IActionResult Create()
@@ -32,6 +38,7 @@ namespace eCommerce.Controllers
         }
 
         //Get: Cinemas/Details/1
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
         {
             var cinemaDetails = await _service.GetByIdAsync(id);
@@ -54,6 +61,7 @@ namespace eCommerce.Controllers
             await _service.UpdateAsync(id, cinema);
             return RedirectToAction(nameof(Index));
         }
+
         //Get: Cinemas/Delete/1
         public async Task<IActionResult> Delete(int id)
         {
