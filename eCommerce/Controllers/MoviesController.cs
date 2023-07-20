@@ -1,5 +1,6 @@
 ﻿using eCommerce.Data;
 using eCommerce.Data.Services;
+using eCommerce.Data.Static;
 using eCommerce.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace eCommerce.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = UserRoles.Admin)]
     public class MoviesController : Controller
     {
         private readonly IMoviesService _service;

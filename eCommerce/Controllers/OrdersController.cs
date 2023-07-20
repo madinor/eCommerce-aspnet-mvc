@@ -1,5 +1,6 @@
 ﻿using eCommerce.Data.Cart;
 using eCommerce.Data.Services;
+using eCommerce.Data.Static;
 using eCommerce.Data.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

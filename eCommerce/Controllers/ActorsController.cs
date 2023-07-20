@@ -1,10 +1,11 @@
 ﻿using eCommerce.Data.Services;
+using eCommerce.Data.Static;
 using eCommerce.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace eCommerce.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = UserRoles.Admin)]
     public class ActorsController : Controller
     {
         private readonly IActorsService _service;
